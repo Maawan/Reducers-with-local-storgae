@@ -1,38 +1,115 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@500&family=Montserrat:ital@1&display=swap');
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  background-color: rgb(104, 104, 104);
+}
+h1 {
   text-align: center;
+  margin-top: 20px;
+  color: aliceblue;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  font-family: 'Montserrat';
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form-container{
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 40px;
+  
+}
+.form-button{
+  flex: 1;
+  background-color: rgb(229, 229, 96);
+  border-radius: 20px;
+  margin-right: 5px;
+  height: 80%;
+  outline: none;
+  border: none;
+  font-weight: bold;
+  border: 1px solid rgb(104, 104, 104);;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all 1s;
+}
+.form-button:hover{
+  background-color: rgb(228, 228, 19);;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
+  
+}
+.todo{
+  background-color: aliceblue;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  display: flex;
+}
+.con1{
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 1s;
+}
+.form-input{
+  flex: 4;
+  margin-left: 15px;
+  font-size: 20px;
+  background-color: aliceblue;
+  border: none;
+  outline: none;
+  transition: all 1s;
+}
+.form-input:hover{
+  border: none;
+  outline: none;
+}
+.main-form{
+  width: 400px;
+  background-color: aliceblue;
+  height: 100%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  transition: all 0.5s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.main-form:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
 }
 
-.App-link {
-  color: #61dafb;
+
+form {
+  position: fixed;
+  bottom: 500px;
+  right: 30%;
+  left: 30%;
+  border-radius: 8px;
+  border: 2px solid rgb(66, 66, 180);
+  color: #000;
+  box-shadow: 0 2px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.items {
+  position: fixed;
+  top: 50px;
+  right: 30%;
+  left: 30%;
+  border-radius: 8px;
+}
+
+.form-group {
+  margin-bottom: 0;
+}
+
+.completedTodo {
+  background-color: darkgray;
+  text-decoration: line-through;
 }
